@@ -1,0 +1,28 @@
+body {
+  margin: 1.5em;
+  background-color: var(--color-bg);
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1em;
+  .footer_links {
+    display: flex;
+    column-gap: 0.5em;
+  }
+}
+section {
+  padding: 2em 0;
+  border-bottom: 1px solid var(--color-border);
+}
+div {
+  padding-top: 0.8em;
+}

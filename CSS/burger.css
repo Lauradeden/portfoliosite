@@ -1,0 +1,124 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  z-index: 20;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-border);
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--color-section2);
+}
+.menu a.active {
+  color: var(--color-section2);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.burger .line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-headline);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+  z-index: 10;
+}
+.burger {
+  display: none;
+}
+.burgerbooking {
+  display: none;
+}
+@media screen and (width < 800px) {
+  #logo_mobil {
+    width: 100%;
+  }
+  #logo_desktop {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    border: 2px solid #4853ad;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 4, 4, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 1.25rem;
+    color: var(--color-headline);
+    font-family: "Poppins Regular";
+    align-items: center;
+    place-self: center;
+  }
+}

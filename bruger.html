@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
     <title>Grundlæggende Brugergrænsefladeudvikling</title>
   </head>
   <body>
@@ -28,11 +29,95 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>GRUNDLÆGGENDE BRUGERGRÆNSEFLADE<br />UDVIKLING</h1>
+      <section>
+        <h2>EMERGENCY SITE</h2>
+        <p>
+          I temaet Grundlæggende Brugergrænsefladeudvikling arbejdede vi videre med udleveret materiale til et Emergency site. Opgaven omfattede blandt andet udarbejdelse af en selvdesignet infografik med interaktive hotspots, kodning af HTML-forms
+          samt introduktion til brugen af JavaScript. Derudover arbejdede vi med popover-artikler, implementering af light mode og dark mode samt anvendelse af CSS custom properties.
+        </p>
+        <a class="cta_btn" href="https://lauradeden.github.io/bilbrydersammen/">SE→</a>
+        <div>
+          <h3>CUSTOM PROPERTIES</h3>
+          <p>
+            Arbejdet startede med, at vi hentede en udleveret zip-fil, som indeholdt alle nødvendige HTML-filer, CSS-filer, fonte og billedmateriale. Herefter skulle vi arbejde videre i den eksisterende CSS og indsætte alle farver fra det udleverede
+            style tile i vores custom properties. I denne proces lærte vi at anvende CSS-variabler til farver, hvilket bidrager til en mere struktureret og overskuelig CSS samt gør det lettere at foretage ændringer og vedligeholde koden.
+          </p>
+          <img src="imgs/emergency_custom.webp" alt="custom" />
+        </div>
+        <div>
+          <h3>HTML FORMS</h3>
+          <p>
+            Sitet skulle indeholde en webformular, som kunne registrere brugerinput, der var relevant for den valgte emergency-situation. Jeg valgte derfor at udvikle en formular, som brugeren kan udfylde for at få tilsendt hjælp, hvis bilen er gået
+            i stå.
+          </p>
+          <p>
+            Med hjælp fra AI fik jeg inspiration til labels og inputfelter, der kunne være relevante i denne sammenhæng. Jeg valgte at prioritere de mest væsentlige brugeroplysninger først, herunder fulde navn og telefonnummer. Herefter fulgte
+            informationer om situationen, herunder en dropdown med labelen “Hvor står bilen?” med fire forskellige svarmuligheder. Derudover inkluderede jeg spørgsmålet “Hvad gik galt?” med fire radio buttons som valgmuligheder. Afslutningsvis
+            indeholdt formularen et tekstfelt til beskrivelse af situationen, en checkbox til accept af vilkår samt en indsend-knap.
+          </p>
+          <p>
+            For at gøre formularen funktionel blev den stylet med CSS og gjort interaktiv ved hjælp af JavaScript. De indtastede oplysninger blev efter indsendelse vist i højre side af siden, så brugeren kunne se en oversigt over de registrerede
+            svar.
+          </p>
+          <img src="imgs/emergency_forms.webp" alt="forms" />
+        </div>
+        <div>
+          <h3>INFOGRAFIK</h3>
+          <p>
+            Inden arbejdet med infografikken kunne påbegyndes, skulle vi vælge et emne for vores emergency site. Til dette anvendte vi en idéudviklingsside, som genererede forslag til både situation og målgruppe. På baggrund af denne proces valgte
+            jeg at fokusere på et emergency site, der henvender sig til situationer, hvor en bil bryder sammen.
+          </p>
+          <p>
+            Derudover skulle vi beslutte, hvilken visuel stil infografikken og de øvrige illustrationer skulle have. Her valgte jeg at arbejde med flat design for at sikre et enkelt og overskueligt visuelt udtryk. Jeg startede med at skitsere min idé
+            til infografikken på papir. Herefter fandt jeg inspirationsbilleder online, der matchede den valgte stil, og brugte Adobe Illustrator til at tegne illustrationerne op ved hjælp af pen tool, med fokus på at anvende så få ankerpunkter som
+            muligt.
+          </p>
+          <p>
+            Under arbejdet blev det tydeligt, at korrekt lagstruktur var afgørende, særligt i forhold til placeringen af hotspots. Efterfølgende blev infografikken farvelagt, og da den var færdig, eksporterede jeg den som en SVG-fil. Dette valg
+            sikrer, at grafikken kan skaleres uden kvalitetstab, da SVG-filer består af vektorbaserede kurver frem for pixels.
+          </p>
+          <p>
+            Den færdige infografik blev herefter indsat i HTML som SVG paths. Ved hjælp af CSS og JavaScript gjorde jeg hotspotsene interaktive. Jeg valgte at visualisere hotspots som små cirkler, og ved brug af JavaScript implementerede jeg
+            funktionalitet, så brugeren kan klikke på dem. Når et hotspot aktiveres, vises den relevante guide-tekst, som enten lukkes igen eller opdateres, når der klikkes på et andet hotspot.
+          </p>
+          <img src="imgs/energency_infografik.webp" alt="infografik" />
+        </div>
+        <div>
+          <h3>FORSIDE</h3>
+          <p>
+            På forsiden skulle vi producere billeder til artikler og teasers ved hjælp af AI, hvor billederne skulle understøtte den tidligere valgte visuelle stil. Derudover skulle vi udarbejde artikler, som passede til emergency-emnet. Artiklerne
+            blev implementeret som popovers, således at der ved klik på “Læs mere” åbnes et overlay med artiklen, som brugeren kan scrolle i.
+          </p>
+          <p>
+            Denne funktionalitet blev realiseret ved hjælp af HTML popover og popovertarget. For at forbedre brugeroplevelsen arbejdede jeg med CSS-transitions og reduceret opacity på baggrunden, så forsiden stadig var synlig, men nedtonet. Derudover
+            justerede jeg bredden på popover-elementet, så det ikke fyldte hele skærmens bredde.
+          </p>
+          <img src="imgs/emergency_forside.webp" alt="forside" />
+        </div>
+        <div>
+          <h3>LIGHT MODE / DARK MODE</h3>
+          <p>
+            Det udleverede materiale specificerede, hvilke farver der skulle anvendes i dark mode. Disse farver blev implementeret ved at justere CSS custom properties, hvor vi benyttede funktionen light-dark(#fff, #000) til at definere farver for
+            henholdsvis light mode og dark mode.
+          </p>
+          <p>
+            For at gøre det muligt at skifte mellem de to tilstande implementerede jeg en knap med et sol- og måneikon. Ikonet fremstod lysegult i light mode og mørkegråt i dark mode. Ved hjælp af JavaScript udviklede jeg en funktion, der skifter
+            mellem light og dark mode ved klik på knappen, samt en event listener, der registrerer brugerens interaktion.
+          </p>
+          <p>
+            Da jeg desværre ikke var til stede den dag, hvor vi i undervisningen lærte at implementere en switch-løsning, der samtidig gemmer brugerens valg, blev denne funktionalitet ikke implementeret på mit emergency site. Jeg ville derfor gerne
+            have haft mulighed for at videreudvikle løsningen, så brugerens valg af dark mode blev husket på tværs af sider.
+          </p>
+          <img src="imgs/emergency_lightdark.webp" alt="lightdark" />
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer_links">
-        <img src="imgs/instagram.svg" alt="Instagram link" />
-        <img src="imgs/linkedin.svg" alt="LinkedIn link" />
+        <a href="https://www.instagram.com/lauradeden/"><img src="imgs/instagram.svg" alt="Instagram link" /></a>
+        <a href="https://www.linkedin.com/in/laura-von-deden-5b04ab214/"><img src="imgs/linkedin.svg" alt="LinkedIn link" /></a>
       </div>
       <p>&#169; Laura von Deden</p>
     </footer>
