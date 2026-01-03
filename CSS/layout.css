@@ -2,22 +2,24 @@
 @media (max-width: 800px) {
   .hero_section {
     margin: 0;
+    border-bottom: 0;
     img {
       width: 100%;
     }
     .hero_h {
       position: absolute;
-      right: 35%;
-      bottom: 68%;
+      right: 38%;
+      bottom: 60%;
       padding: 2.5rem;
       transform: translate(50%, 50%);
     }
     .hero_name {
       position: absolute;
-      right: 30%;
-      bottom: 66.75%;
+      right: 35%;
+      bottom: 58%;
       padding: 2.5rem;
       transform: translate(50%, 50%);
+      text-align: center;
     }
   }
   .sectiongrid1_1 {
