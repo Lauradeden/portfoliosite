@@ -1,0 +1,110 @@
+/* Forside */
+@media (max-width: 800px) {
+  .hero_section {
+    margin: 0;
+    img {
+      width: 100%;
+    }
+    .hero_h {
+      position: absolute;
+      right: 35%;
+      bottom: 68%;
+      padding: 2.5rem;
+      transform: translate(50%, 50%);
+    }
+    .hero_name {
+      position: absolute;
+      right: 30%;
+      bottom: 66.75%;
+      padding: 2.5rem;
+      transform: translate(50%, 50%);
+    }
+  }
+  .sectiongrid1_1 {
+    padding: 4em;
+    .card {
+      border-radius: 8px;
+      border: 2px solid var(--color-border);
+      padding: 1.5em;
+      place-items: center;
+      margin-bottom: 2em;
+      box-shadow: 0 10px 10px rgba(0, 4, 4, 0.1);
+      h2 {
+        margin: 0;
+      }
+      img {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+/* Om mig */
+
+/* Mine projekter */
+@media (max-width: 800px) {
+  .projekt_btn {
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
+    padding: 1em 0.5em;
+    place-items: center;
+    margin: 1.5em 0;
+    box-shadow: 0 10px 10px rgba(0, 4, 4, 0.1);
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  .projekt_btn:hover {
+    background-color: var(--color-cta);
+  }
+  .projekt_btn:active {
+    background-color: var(--color-cta-inverted);
+    h2 {
+      color: var(--color-cta);
+    }
+  }
+}
+
+/* Introuge */
+@media (max-width: 800px) {
+  .scroll {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  a.scroll_btn {
+    color: var(--color-headline);
+    border-radius: 30px;
+    border: 2px solid var(--color-border);
+    font-size: 0.8125rem;
+    text-decoration: none;
+    font-family: "Poppins SemiBold";
+    padding: 0.5em 1em;
+    box-shadow: 0 10px 10px rgba(0, 4, 4, 0.1);
+  }
+  a.scroll_btn:hover {
+    background-color: var(--color-cta);
+  }
+  a.scroll_btn:active {
+    background-color: var(--color-cta-inverted);
+    color: var(--color-cta);
+  }
+  a.cta_btn {
+    border-radius: 30px;
+    border: 2px solid var(--color-border);
+    color: var(--color-headline);
+    font-size: 0.8125rem;
+    text-decoration: none;
+    font-family: "Poppins SemiBold";
+    padding: 0.5em 1em;
+    box-shadow: 0 10px 10px rgba(0, 4, 4, 0.1);
+    float: right;
+    margin-bottom: 1em;
+  }
+  a.cta_btn:hover {
+    background-color: var(--color-cta);
+  }
+  a.cta_btn:active {
+    background-color: var(--color-cta-inverted);
+    color: var(--color-cta);
+  }
+}

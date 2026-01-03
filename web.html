@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
     <title>Grundlæggende Web</title>
   </head>
   <body>
@@ -28,11 +29,73 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>GRUNDLÆGGENDE WEB</h1>
+      <p>
+        I temaet Grundlæggende Web opnåede vi den nødvendige grundviden for selvstændigt at kunne opbygge og kode en hjemmeside. Vi blev introduceret til HTML, CSS og semantisk markup samt fik viden om billedeformater, ophavsret og grundlæggende
+        designprincipper. I løbet af temaet arbejdede vi med to afleveringer, Mobilsite og Website, som tog udgangspunkt i den samme overordnede opgave, men med justeringer og udvidelser i kravene.
+      </p>
+      <div class="scroll">
+        <a class="scroll_btn" href="#mobilsite">MOBILSITE</a>
+        <a class="scroll_btn" href="#website">WEBSITE</a>
+      </div>
+      <section>
+        <h2 id="mobilsite">MOBILSITE</h2>
+        <p>I opgaven Mobilsite skulle vi kode vores første hjemmeside fra bunden. Alt indhold i form af tekst og billeder blev udleveret, og på baggrund af dette materiale skulle sitet kodes ud fra udleverede wireframes og layoutdiagrammer.</p>
+        <p>
+          Kravene til opgaven var, at der udelukkende måtte anvendes det udleverede indhold, herunder billeder og tekst. Derudover skulle sitet designes med brug af to farver og to fonte samt anvende margin og padding for at sikre god læsbarhed og en
+          overskuelig visuel struktur.
+        </p>
+        <a class="cta_btn" href="https://lauradeden.github.io/mobilsitee/">SE→</a>
+        <div>
+          <h3>PROCES</h3>
+          <p>
+            Jeg indledte processen med at opsætte HTML-strukturen og oprette alle undersider med tilhørende CSS-filer. Der blev arbejdet med en klar og logisk mappestruktur, så det var nemt at navigere rundt i projektet og holde overblik over filer
+            og indhold.
+          </p>
+          <p>
+            Herefter arbejdede jeg med valg af farver og typografi. Til farvevalget anvendte jeg Adobe Color Wheel, hvor jeg valgte en lilla baggrundsfarve til h2-overskrifter og en blå/lilla nuance til CTA-elementer. Farverne blev valgt for at skabe
+            en visuel sammenhæng på tværs af siderne, samtidig med at den lilla farve harmonerede med farverne i de udleverede billeder. Til typografi benyttede jeg Fontjoy til at sammensætte to fonte, hvor jeg valgte Lato til h1-overskrifter og
+            Cormorant til den øvrige tekst.
+          </p>
+          <img src="imgs/mobil_proces.webp" alt="Mobil proces" />
+        </div>
+        <div>
+          <h3>KODNING</h3>
+          <p>Efter beslutningen om farver og fonte blev sitet kodet og stylet. Jeg arbejdede ud fra en mobile-first tilgang og tog udgangspunkt i de udleverede wireframes og layoutdiagrammer.</p>
+          <p>Da sitet var færdigkodet, blev det publiceret ved hjælp af GitHub.</p>
+        </div>
+      </section>
+      <section>
+        <h2 id="website">WEBSITE</h2>
+        <p>
+          Opgaven Website fungerede som vores studiestartsprøve. Her skulle vi videreudvikle mobilsitet, så det også fungerede optimalt på desktop. I den forbindelse blev der udleveret nye wireframes, som websitet skulle følge. Derudover skulle vi
+          selv producere tekst og billeder til siden Min computer.
+        </p>
+        <a class="cta_btn" href="https://lauradeden.github.io/website/">SE→</a>
+        <div>
+          <h3>PROCES</h3>
+          <p>
+            På baggrund af de nye wireframes skulle sitets visuelle udtryk justeres en smule. Jeg valgte derfor at ændre farvepaletten og arbejdede med to komplementærfarver, lilla og gul, som fungerede godt sammen og gav sitet et mere markant
+            visuelt udtryk. De to fonte fra mobilsitet blev bibeholdt.
+          </p>
+          <img src="imgs/website_proces.webp" alt="website proces" />
+        </div>
+        <div>
+          <h3>KODNING</h3>
+          <p>
+            Da sitet nu skulle fungere både på mobil og desktop, blev der arbejdet med media queries for at styre, hvordan indholdet blev vist på forskellige skærmstørrelser. Dette var særligt vigtigt på gallerisiden, hvor billederne skulle opstilles
+            forskelligt afhængigt af, om sitet blev vist på mobil eller desktop.
+          </p>
+          <p>Da sitet var færdigudviklet, blev både HTML og CSS valideret for at identificere eventuelle fejl i struktur og kode, som herefter kunne rettes.</p>
+          <img src="imgs/website_kodning.webp" alt="website kodning" />
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer_links">
-        <img src="imgs/instagram.svg" alt="Instagram link" />
-        <img src="imgs/linkedin.svg" alt="LinkedIn link" />
+        <a href="https://www.instagram.com/lauradeden/"><img src="imgs/instagram.svg" alt="Instagram link" /></a>
+        <a href="https://www.linkedin.com/in/laura-von-deden-5b04ab214/"><img src="imgs/linkedin.svg" alt="LinkedIn link" /></a>
       </div>
       <p>&#169; Laura von Deden</p>
     </footer>
