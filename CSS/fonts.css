@@ -1,0 +1,48 @@
+/* Fonts */
+/* Hero H */
+@font-face {
+  font-family: "Poppins ExtraBold";
+  src: url("../fonts/Poppins-ExtraBold.woff2");
+  font-style: normal;
+}
+/* Hero navn */
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora-Italic-VariableFont_wght.woff2");
+  font-style: italic;
+}
+
+/* H1 */
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../fonts/Poppins-Bold.woff2");
+  font-style: normal;
+}
+
+/* H2 + btn */
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("../fonts/Poppins-SemiBold.woff2");
+  font-style: normal;
+}
+
+/* H3 */
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../fonts/Poppins-Medium.woff2");
+  font-style: normal;
+}
+
+/* H4 + nav */
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../fonts/Poppins-Regular.woff2");
+  font-style: normal;
+}
+
+/* Tekst - P */
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-VariableFont_wght.woff2");
+  font-style: normal;
+}
