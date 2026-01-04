@@ -67,7 +67,7 @@ a {
 .burgerbooking {
   display: none;
 }
-@media screen and (width < 800px) {
+@media screen and (width < 700px) {
   #logo_mobil {
     width: 100%;
   }
@@ -120,5 +120,17 @@ a {
     font-family: "Poppins Regular";
     align-items: center;
     place-self: center;
+  }
+}
+@media (width>700px) {
+  #logo_mobile {
+    display: none;
+  }
+  #logo_desktop {
+    width: 100%;
+  }
+  ul li {
+    font-family: "Poppins Regular";
+    color: var(--color-headline);
   }
 }
