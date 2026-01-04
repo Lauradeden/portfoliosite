@@ -9,11 +9,9 @@ header {
   margin: 0;
   background-color: var(--color-bg);
 }
-
 .logo img {
   height: 100px;
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -22,7 +20,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 .menu {
   display: flex;
   list-style: none;
@@ -30,28 +27,24 @@ a {
   padding: 0;
   gap: 20px;
 }
-
 .menu a {
   display: block;
   padding: 10px;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .menu a:hover {
   color: var(--color-section2);
 }
 .menu a.active {
   color: var(--color-section2);
 }
-
 .burger {
   width: 30px;
   height: 20px;
   cursor: pointer;
   justify-self: center;
 }
-
 .burger .line {
   display: block;
   width: 30px;
