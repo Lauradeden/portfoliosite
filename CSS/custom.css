@@ -13,8 +13,8 @@ html {
   --color-cta: #d3dbff;
   --color-cta-inverted: #4853ad;
 }
-@media (width>800px) {
-  /* Fonts + størrelser Desktop */
+/* Fonts + størrelser Desktop */
+@media (width>700px) {
   .hero_h {
     font-family: "Poppins ExtraBold";
     font-size: 6rem;
@@ -56,9 +56,8 @@ html {
     color: var(--color-cta);
   }
 }
-
-@media (max-width: 800px) {
-  /* Fonts og størrelser mobile  */
+/* Fonts og størrelser mobile  */
+@media (max-width: 700px) {
   .hero_h {
     font-family: "Poppins ExtraBold";
     font-size: 2.5rem;
