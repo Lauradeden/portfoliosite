@@ -49,6 +49,7 @@ html {
     font-family: "WorkSans";
     font-size: 1.125rem;
     color: var(--color-text);
+    line-height: 1.5em;
   }
   .cta_btn {
     font-family: "Poppins SemiBold";
@@ -93,6 +94,7 @@ html {
     font-family: "WorkSans";
     font-size: 0.875rem;
     color: var(--color-text);
+    line-height: 1.5em;
   }
   .cta_btn {
     font-family: "Poppins SemiBold";
