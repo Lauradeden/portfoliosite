@@ -15,7 +15,10 @@
   <body>
     <header>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"><img id="logo_mobile" src="imgs/logo_mobile.svg" alt="logo_mobile" /><img id="logo_desktop" src="imgs/logo_desktop.svg" alt="logo_desktop" /></a>
+        <a href="index.html"><img id="logo_mobile" src="imgs/logo_mobile.svg" alt="logo_mobile" /></a>
+      </div>
+      <div id="logotype-wrapper-dark" class="logo">
+        <a href="index.html"><img id="logo_mobile_dark" src="imgs/logo_mobile_dark.svg" alt="logo_mobile" /></a>
       </div>
       <nav>
         <ul class="menu">
@@ -23,6 +26,10 @@
           <li><a href="ommig.html">OM MIG</a></li>
           <li><a href="mineprojekter.html">MINE PROJEKTER</a></li>
         </ul>
+        <label>
+          <span class="visually-hidden">Theme</span>
+          <input id="theme-toggle" role="switch" type="checkbox" />
+        </label>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -62,11 +69,12 @@
     </main>
     <footer>
       <div class="footer_links">
-        <a href="https://www.instagram.com/lauradeden/" target="_blank"><img src="imgs/instagram.svg" alt="Instagram link" /></a>
-        <a href="https://www.linkedin.com/in/laura-von-deden-5b04ab214/" target="_blank"><img src="imgs/linkedin.svg" alt="LinkedIn link" /></a>
+        <a href="https://www.instagram.com/lauradeden/" target="_blank"><img class="instagram_light" src="imgs/instagram.svg" alt="Instagram link" /><img class="instagram_dark" src="imgs/instagram_dark.svg" alt="Instagram link" /></a>
+        <a href="https://www.linkedin.com/in/laura-von-deden-5b04ab214/" target="_blank"><img class="linkedin_light" src="imgs/linkedin.svg" alt="LinkedIn link" /><img class="linkedin_dark" src="imgs/linkedin_dark.svg" alt="LinkedIn link" /></a>
       </div>
       <p>&#169; Laura von Deden</p>
     </footer>
   </body>
 </html>
 <script src="JS/burger.js"></script>
+<script src="JS/lightdark.js"></script>

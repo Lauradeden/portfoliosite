@@ -1,18 +1,24 @@
+/* CSS variablere */
 html {
+  color-scheme: light;
   /* Baggrundsfarve */
-  --color-bg: #fef9f3;
+  --color-bg: light-dark(#fef9f3, #535353);
 
   /* Tekst og overskrifter */
-  --color-text: #535353;
-  --color-headline: #4853ad;
-  --color-name: #d3dbff;
+  --color-text: light-dark(#535353, #fef9f3);
+  --color-headline: light-dark(#4853ad, #d3dbff);
+  --color-name: light-dark(#d3dbff, #4853ad);
 
   /* Farver */
-  --color-cta: #4853ad;
-  --color-border: #4853ad;
-  --color-cta: #d3dbff;
-  --color-cta-inverted: #4853ad;
+  --color-cta: light-dark(#4853ad, #d3dbff);
+  --color-border: light-dark(#4853ad, #d3dbff);
+  --color-cta: light-dark(#d3dbff, #4853ad);
+  --color-cta-inverted: light-dark(#4853ad, #d3dbff);
 }
+html.dark {
+  color-scheme: dark;
+}
+
 /* Fonts + størrelser Desktop */
 @media (width>700px) {
   .hero_h {
@@ -57,7 +63,7 @@ html {
     color: var(--color-cta);
   }
 }
-/* Fonts og størrelser mobile  */
+/* Fonts + størrelser mobile  */
 @media (max-width: 700px) {
   .hero_h {
     font-family: "Poppins ExtraBold";

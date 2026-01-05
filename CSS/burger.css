@@ -1,3 +1,4 @@
+/* Header og navigation */
 header {
   position: sticky;
   top: 0;
@@ -8,6 +9,7 @@ header {
   border-bottom: 2px solid var(--color-border);
   margin: 0;
   background-color: var(--color-bg);
+  padding: 0.5em 1em;
 }
 .logo img {
   height: 100px;
@@ -15,10 +17,6 @@ header {
 nav {
   display: flex;
   align-items: center;
-}
-a {
-  text-decoration: none;
-  color: inherit;
 }
 .menu {
   display: flex;
@@ -39,6 +37,13 @@ a {
 .menu a.active {
   color: var(--color-section2);
 }
+@media (width>700px) {
+  ul li {
+    font-family: "Poppins Regular";
+    color: var(--color-headline);
+  }
+}
+/* Burger */
 .burger {
   width: 30px;
   height: 20px;
@@ -53,20 +58,12 @@ a {
   margin-bottom: 5px;
   transition: 0.2s linear;
   z-index: 10;
+  border-radius: 8px;
 }
 .burger {
   display: none;
 }
-.burgerbooking {
-  display: none;
-}
 @media screen and (width < 700px) {
-  #logo_mobil {
-    width: 100%;
-  }
-  #logo_desktop {
-    display: none;
-  }
   .menu {
     display: none;
   }
@@ -115,15 +112,48 @@ a {
     place-self: center;
   }
 }
-@media (width>700px) {
-  #logo_mobile {
-    display: none;
-  }
-  #logo_desktop {
-    width: 100%;
-  }
-  ul li {
-    font-family: "Poppins Regular";
-    color: var(--color-headline);
-  }
+
+/* Logo dark mode styling */
+#logo_mobil {
+  width: 100%;
+}
+
+html.dark #logotype-wrapper {
+  display: none;
+}
+html.dark #logo_mobile {
+  display: none;
+}
+html #logotype-wrapper-dark {
+  display: none;
+}
+html #logo_mobile_dark {
+  display: none;
+}
+html.dark #logotype-wrapper-dark {
+  display: block;
+}
+html.dark #logo_mobile_dark {
+  display: block;
+}
+
+html.dark .instagram_light {
+  display: none;
+}
+html.dark .linkedin_light {
+  display: none;
+}
+
+html .instagram_dark {
+  display: none;
+}
+html .linkedin_dark {
+  display: none;
+}
+
+html.dark .instagram_dark {
+  display: block;
+}
+html.dark .linkedin_dark {
+  display: block;
 }
